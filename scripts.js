@@ -1,9 +1,9 @@
 function pokeSubmit(){
     var param = document.getElementById("pokeInput").value;
-    var pokeURL = "http://pokeapi.co/api/v1/pokemon/" + param;
+    var pokeURL = "https://pokeapi.co/api/v1/pokemon/" + param;
 
     // new URL for 3rd GET request
-    var pokeURL2 = "http://pokeapi.co/api/v2/pokemon/" + param;
+    var pokeURL2 = "https://pokeapi.co/api/v2/pokemon/" + param;
 
     $.getJSON(pokeURL, function(data){
         //console.log(data);
