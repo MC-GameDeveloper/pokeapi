@@ -26,6 +26,8 @@ function pokeSubmit(){
         $.getJSON(pokeURL2, function(data3){
             console.log(data3);
             console.log(JSON.stringify(data, null, "  "));
+
+            var imageURI = data3.sprites.front_default;
             /*
             console.log("Number: ", pokeID);
             console.log("Name: ", pokeName);
