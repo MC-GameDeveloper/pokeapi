@@ -28,14 +28,14 @@ function pokeSubmit(){
             console.log(JSON.stringify(data, null, "  "));
 
             var imageURI = data3.sprites.front_default;
-            
+            /*
             console.log("Number: ", pokeID);
             console.log("Name: ", pokeName);
             console.log("Type 1: ", pokeType1);
             console.log("Type 2: ", pokeType2);
             console.log("Description URI: ", descriptionURI);
             console.log("Description: ", pokeDescription);
-            
+            */
         });
 
     });	// 2nd and 3rd GET requests are nested in success function of 1st GET request
