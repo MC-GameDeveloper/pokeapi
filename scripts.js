@@ -1,9 +1,9 @@
 function pokeSubmit(){
     var param = document.getElementById("pokeInput").value;
-    var pokeURL = "https://pokeapi.co/api/v1/pokemon/" + param;
+    var pokeURL = "http://pokeapi.co/api/v1/pokemon/" + param;
 
     // new URL for 3rd GET request
-    var pokeURL2 = "https://pokeapi.co/api/v2/pokemon/" + param;
+    var pokeURL2 = "http://pokeapi.co/api/v2/pokemon/" + param;
 
     $.getJSON(pokeURL, function(data){
         //console.log(data);
@@ -28,15 +28,13 @@ function pokeSubmit(){
             console.log(JSON.stringify(data, null, "  "));
 
             var imageURI = data3.sprites.front_default;
-            /*
-            console.log("Number: ", pokeID);
-            console.log("Name: ", pokeName);
-            console.log("Type 1: ", pokeType1);
-            console.log("Type 2: ", pokeType2);
-            console.log("Description URI: ", descriptionURI);
-            console.log("Description: ", pokeDescription);
-            */
         });
 
-    });	// 2nd and 3rd GET requests are nested in success function of 1st GET request
+    });	
 }
+
+
+
+
+
+
